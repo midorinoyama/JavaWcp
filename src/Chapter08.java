@@ -2,26 +2,29 @@
 public class Chapter08 {
 
 	public static void main(String[] args) {
-		// while文
-		int num = 1;
-		while (num < 5) {
-			System.out.println(num * num);
-			num++;
+		// 1while文
+		int number = 1;
+		while (number < 5) {	
+			//べき乗
+			System.out.println(number*number);
+			number ++;
 		}
 		
-		// for文
-		int[] array = { 1, 10, 134, 9};
-		for (int i = 0; i < array.length; i++) {
+		// 2for文
+		int[] array = {1,4,14,25};
+		for (int i = 0; i < array.length; i++ ) {
 			System.out.println(array[i]);
 		}
 	
-		// 拡張for文
-		for (int val : array) {
-		    if (val % 2 == 0) {
-		        continue;
-		    }
-		    System.out.println(val);
+		// 3拡張for文 偶数はスキップ
+		for(int j:array) {
+			if (j % 2 == 0) {
+				continue;
+			}
+			System.out.println(j);
 		}
+		
+		
 	
 	}
 
