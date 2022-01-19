@@ -7,16 +7,15 @@ public class Test02 {
 		int amount = 0;
 		int sum = 0;
 		
-		for(int i = 1; i <= 10; i++) {
-			if (i % 2 == 0) {	
+		for (int i=1; i<=10; i++) {
+			if (i%2 == 0) {
 				amount = i;
 				sum += i;
 			}
 		}
-		
-		// 最初はif分の中に入れて考えていたため、繰り返しから外す！！
-		System.out.println("偶数は" + amount + "個です。");
-		System.out.println("偶数の合計値は" + sum + "です。");
+		//最初はfor分の中に入れて考えていたから注意
+		System.out.println("偶数は" + amount + "個です");
+		System.out.println("偶数の合計値は" + sum);
 	}
 
 }
